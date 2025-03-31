@@ -3,6 +3,7 @@ import Locales from "@/components/_layout/partials/Locales";
 import persistentStore from "@/lib/store/persistentStore";
 import Link from "next/link";
 import globalState from "@/lib/store/globalState";
+import Image from "next/image";
 export default function Menu() {
   const ready = globalState((state) => state.ready);
   const locale = persistentStore((state) => state.locale);
@@ -19,14 +20,17 @@ export default function Menu() {
     { label: "Contact", url: "/contact", target: "" },
   ];
   return (
-    <header className="py-[15px] z-[1000] sticky top-0 bg-white shadow-md">
+    <header className="py-[15px] z-[1000] sticky top-0 bg-[#272727] shadow-md">
       <div className="container">
         <div className="flex flex-wrap justify-between items-center">
           <div className="logo">
             <Link href="/">
-              <div className="w-[200px] rounded-sm h-[70px] bg-gray-300 flex items-center justify-center p-[15px]">
-                Logo Here
-              </div>
+              <Image
+                src="/images/logoattire.png"
+                alt="logo"
+                width={100}
+                height={100}
+              />
             </Link>
           </div>
           <div className="flex items-center justify-between">
