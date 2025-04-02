@@ -28,8 +28,8 @@ export default function Menu() {
               <Image
                 src="/images/logoattire.png"
                 alt="logo"
-                width={100}
-                height={100}
+                width={120}
+                height={120}
               />
             </Link>
           </div>
