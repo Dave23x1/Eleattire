@@ -7,10 +7,10 @@ export default function Footer() {
       <div className="container">
         <div className="flex flex-wrap gap-[15px] justify-between items-center">
           <span>
-            {`&copy; ${currentYear} Sample Sitename. All rights reserved.`}{" "}
+            {`&copy; ${currentYear} Sample Sitename. All rights reserved.`}{""}
           </span>
           <span className="opacity-50">
-            <Link href="https://halcyonagile.com/" target="_blank">
+            <Link href="https://halcyonagile.com/" target="_blank">*
               Web develop by:
               <span className="underline">Halcyon Web Design</span>
             </Link>
